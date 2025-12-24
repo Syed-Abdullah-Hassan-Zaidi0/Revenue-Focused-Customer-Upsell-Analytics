@@ -193,3 +193,86 @@ Designed an **executive-friendly Power BI dashboard** focused on **business insi
 This project showcases how **analytics and machine learning can drive revenue growth**, not just reduce losses.
 
 By focusing on **upsell opportunities**, it aligns technical modeling with **real-world business impact**.
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+## 📁 Project Structure
+
+├── data/
+│ └── Teleco_customer_churn
+│
+├── notebook_SQL/
+│ ├── Revenue_Analysis.ipynb
+│ ├── upsell.db
+│ ├── queries.sql
+│ └── upsell_predictions.csv
+│
+├── powerbi/
+│ ├── upsell_powerbi.csv
+│ └── Upsell_Powerbi.pbix
+
+
+
+
+---
+
+## 📂 Folder & File Description
+
+### 📁 `data/`
+Contains the raw dataset used for analysis and modeling.
+
+- **Teleco_customer_churn**  
+  Original telecom customer dataset containing customer demographics, services, tenure, charges, and churn-related fields.  
+  This dataset is used **only for analysis and business logic**, not for churn prediction.
+
+---
+
+### 📁 `notebook_SQL/`
+This folder contains the **core analytics and modeling workflow**, along with SQL integration.
+
+- **Revenue_Analysis.ipynb**  
+  Main Jupyter Notebook covering:
+  - Data cleaning and preprocessing  
+  - Exploratory Data Analysis (EDA)  
+  - Business logic for upsell target creation  
+  - Decision Tree model training  
+  - Upsell probability, prediction, and priority assignment  
+
+- **upsell.db**  
+  SQLite database storing model outputs and transformed data, simulating a real-world analytics pipeline.
+
+- **queries.sql**  
+  SQL queries written for:
+  - Identifying high upsell potential customers  
+  - Revenue-focused customer segmentation  
+  - Upsell priority analysis  
+
+- **upsell_predictions.csv**  
+  Exported model predictions including:
+  - Upsell probability  
+  - Upsell prediction (0/1)  
+  - Upsell priority (High / Medium / Low)  
+  Used for SQL analysis and Power BI reporting.
+
+---
+
+### 📁 `powerbi/`
+Contains files used for **business-focused visualization and reporting**.
+
+- **upsell_powerbi.csv**  
+  Cleaned, Power BI–ready dataset.
+
+- **Upsell_Powerbi.pbix**  
+  Interactive Power BI dashboard featuring:
+  - Top upsell customers  
+  - Upsell priority distribution  
+  - Revenue vs upsell probability  
+  - Tenure-based upsell insights  
+
+  Designed for **non-technical stakeholders and business teams**.
+
+---
+
